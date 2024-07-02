@@ -1,14 +1,15 @@
-const getShippingCost(country){
-    country=prompt("your country",  "country")
+let getShippingCost = (country)=>{
     switch(country){
-        case "Australia":;
-        case "Germany":;
-        case "China":;
-        case "Chile":;
-        case "Jamaica":;
-        case "Sweden":;
+        case "Australia": return "Shipping to ${country} will cost 170 credits";
+        break;
+        case "China": return "Shipping to ${country} will cost 100 credits";
+        break;
+        case "Chile": return "Shipping to ${country} will cost 250 credits";
+        break;
+        case "Jamaica": return "Shipping to ${country} will cost 120 credits";
+        break;
         default:
-            "Sorry, there is no delivery to your country";
+            return "Sorry, there is no delivery to your country";
     }
 }
 
