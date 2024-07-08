@@ -1,5 +1,7 @@
+console.log("Gorev 3. Spam kontrolu");
 const checkForSpam = (message)=>{
-    if(message.includes("spam")||message.includes("sale")){
+    const messageLower = message.toLowerCase();
+    if(messageLower.includes("spam") || messageLower.includes("sale")){
         return true;
     }
     else

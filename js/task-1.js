@@ -1,19 +1,18 @@
+console.log("Gorev 1. Droid Siparisleri");
 let quantity;
 let pricePerDroid;
 let customerCredits=6800;
 
 let totalPrice=0;
 const makeTransaction = (quantity, pricePerDroid, customerCredits) => {
-    if(customerCredits>pricePerDroid*quantity){
         totalPrice=pricePerDroid*quantity;
-        customerCredits-=totalPrice;
-        return "You ordered ${quantity} droids worth ${totalPrice} credits!"
-    }
-    else{
-        return "Insufficient funds!"
-    }
+        if(totalPrice<=customerCredits){
+            return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+        }
+        else{
+        return `Insufficient funds!`;
+        }
 }
-
 
 console.log(makeTransaction(5, 3000, 23000)); // "You ordered 5 droids worth 15000 credits!"
 console.log(makeTransaction(3, 1000, 15000)); // "You ordered 3 droids worth 3000 credits!"
