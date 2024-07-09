@@ -1,8 +1,4 @@
 console.log("Gorev 1. Droid Siparisleri");
-let quantity;
-let pricePerDroid;
-let customerCredits=6800;
-
 let totalPrice=0;
 const makeTransaction = (quantity, pricePerDroid, customerCredits) => {
         totalPrice=pricePerDroid*quantity;

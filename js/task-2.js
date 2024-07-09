@@ -1,6 +1,4 @@
 console.log("Gorev 2. Mesaj Bicimlendirme");
-let message;
-let maxLength;
 const formatMessage = (message, maxLength)=>{
     if(message.length>maxLength){
         return message.slice(0,maxLength)+"...";
